@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Triangulo_JERH.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Area de los Tiangulos" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <StackLayout Padding="20,20,20,20">
+            <Grid>
+                <Label Grid.Column="0" Grid.Row="0" VerticalOptions="Center"  Text="Base(Cm)"/>
+                <Entry Grid.Column="1" Grid.Row="0" Margin="-80,0,0,0" Placeholder="Base(Cm)" x:Name="Base" Keyboard="Numeric"/>
+
+                <Label Grid.Column="0" Grid.Row="1" VerticalOptions="Center" Text="Lado 1(Cm)"/>
+                <Entry Grid.Column="1" Grid.Row="1" Margin="-80,0,0,0" Placeholder="Lado 1(Cm)" x:Name="Lado_1" Keyboard="Numeric"/>
+
+                <Label Grid.Column="0" Grid.Row="2" VerticalOptions="Center" Text="Lado 2(Cm)"/>
+                <Entry Grid.Column="1" Grid.Row="2" Margin="-80,0,0,0" Placeholder="Lado 2(Cm)" x:Name="Lado_2" Keyboard="Numeric"/>
+
+                <Label Grid.Column="0" Grid.Row="3" VerticalOptions="Center" Text="Altura"/>
+                <Entry Grid.Column="1" Grid.Row="3" Margin="-80,0,0,0" Placeholder="Altura(Cm)" x:Name="Altura" Keyboard="Numeric"/>
+
+                <Label Grid.Column="0" Grid.Row="4" VerticalOptions="Center" Text="Area"/>
+                <Entry Grid.Column="1" Grid.Row="4" Margin="-80,0,0,0" Placeholder="Area(Cm)" x:Name="AreaTriangulo" IsEnabled="False"/>
+
+                <Label Grid.Column="0" Grid.Row="5" VerticalOptions="Center" Text="Tipo"/>
+                <Entry Grid.Column="1" Grid.Row="5" Margin="-80,0,0,0" Placeholder="Tipo" x:Name="Tipo" IsEnabled="False"/>
+
+
+
+                <Button Grid.ColumnSpan="2" Grid.Row="6" Clicked="Area" Text="Calcular"></Button>
+            </Grid>
+        </StackLayout>
+
+        <Image Source="TrianguloEquilatero.png" HeightRequest="180" IsVisible="false" x:Name="imgEquilatero"/>
+        <Image Source="TrianguloEscaleno.png" HeightRequest="180" IsVisible="false" x:Name="imgEscaleno"/>
+        <Image Source="Trianguloisosceles.png" HeightRequest="180" IsVisible="false" x:Name="imgisosceles"/>
+
+        
+        
+        
+        
+    </StackLayout>
+
+</ContentPage>

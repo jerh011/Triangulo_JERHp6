@@ -1,0 +1,39 @@
+﻿^ContentPage {
+    background-color: #333676;
+}
+
+label {
+    background-color: dodgerblue;
+    color:black;
+}
+Entry {
+    Margin: "-80,0,0,0";
+}
+
+.Input {
+    background-color: deepskyblue;
+    color: deeppink;
+    font-size: 30;
+}
+Frame#Encabezado {
+    background-color: #4cff00;
+}
+label.Encabezado {
+    background-color: #4cff00;
+    font-size:50;
+}
+label.Texto {
+    font-size: 30;
+    placeholder-colore:white;
+}
+
+Entry.EArea {
+    background-color: orangered;
+    color: darkblue;
+}
+
+#ETipo {
+    background-color: orangered;
+    color:darkblue;
+
+}
